@@ -25,7 +25,7 @@ Second statement !
 Third statement !
 """
 
-# 5. In case you wish to have them all in one line, you can use "ends" keyword as a parameter to the print function - 
+# 5. In case you wish to have them all in one line, you can use "end" keyword as a parameter to the print function - 
 print("First statement !", end = "")
 print("Second statement !", end = "")
 print("Third statement !")
