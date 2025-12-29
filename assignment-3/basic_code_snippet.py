@@ -507,10 +507,10 @@ print("Loop ended after flag became False")
 
 # Using a non-boolean condition (logical mistake)
 # This is allowed syntactically, but logic may fail:
-num = 5
-while num:  # condition is truthy while num != 0
-    print("num =", num)
-    num -= 2
+#num = 5
+#while num:  # condition is truthy while num != 0
+#    print("num =", num)
+#    num -= 2
 # Works but may confuse readers; explicit comparison (num > 0) is clearer.
 # Output:
 # num = 5
