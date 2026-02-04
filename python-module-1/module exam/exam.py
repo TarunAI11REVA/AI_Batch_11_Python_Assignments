@@ -710,8 +710,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load datasets
-red = pd.read_csv('/Users/tdhraik/AI_Batch_11_Python_Assignments/module exam/winequality-red.csv', sep=';')
-white = pd.read_csv('/Users/tdhraik/AI_Batch_11_Python_Assignments/module exam/winequality-white.csv', sep=';')
+red = pd.read_csv('module exam/winequality-red.csv', sep=';')
+white = pd.read_csv('module exam/winequality-white.csv', sep=';')
 
 # Add labels
 red['wine_type'] = 'red'
@@ -872,11 +872,11 @@ quality_corr = corr_matrix["quality"].sort_values(ascending=False)
 print(quality_corr)
 
 # Most positively correlated feature (besides quality itself)
-top_positive = quality_corr[1]    # skip first because it's 1.0 (quality with quality)
+top_positive = quality_corr.iloc[1]    # skip first because it's 1.0 (quality with quality)
 top_positive_feature = quality_corr.index[1]
 
 # Most negatively correlated feature
-top_negative = quality_corr[-1]
+top_negative = quality_corr.iloc[-1]
 top_negative_feature = quality_corr.index[-1]
 
 # ======================================
